@@ -179,31 +179,7 @@
     font-family: $sans;
     margin-top: 70px;
 
-    h1{
-        
-    }
-
-    a {
-        text-decoration: none;
-        width: 288px;
-
-        div{
-            background: #00F3BB;
-            
-            p{
-                font-size: 16px;
-                color: #060A24;
-                letter-spacing: 0;
-                text-align: center;
-                line-height: 22px;
-                font-family: $mono;  /*mono medium*/
-                text-decoration: none;
-                padding: 13px 0px;
-            }
-        }
-    }
-
-    h1{
+    h1 {
         font-size: $title-mobile;
         color: #FFFFFF;
         letter-spacing: 0;
@@ -211,6 +187,27 @@
         font-family: $sans;
         margin-bottom: 36px;
         line-height: 42px;
+        max-width: 200px;
     }
 
+    a {
+        text-decoration: none;
+        width: 288px;
+
+        div {
+            background: #00F3BB;
+
+            p {
+                font-size: 16px;
+                color: #060A24;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 22px;
+                font-family: $mono;
+                /*mono medium*/
+                text-decoration: none;
+                padding: 13px 0px;
+            }
+        }
+    }
 }

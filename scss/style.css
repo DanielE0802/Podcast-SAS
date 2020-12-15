@@ -17,7 +17,8 @@
 /*Colores*/
 /*margenes*/
 /*tamaños fuentes*/
-nav, .ul {
+nav,
+.ul {
   display: none; }
 
 .header {
@@ -37,15 +38,14 @@ nav, .ul {
   height: 24px;
   margin-left: 16px; }
 
-.menu_bar input {
-  width: 20px;
-  height: 20px;
-  display: none; }
-
 .menu_bar label {
   margin-right: 19px;
   width: 18px;
   height: 12px; }
+.menu_bar input {
+  width: 20px;
+  height: 20px;
+  display: none; }
 
 .header-text h1 {
   margin-left: 16px;
@@ -183,6 +183,15 @@ nav, .ul {
   align-items: center;
   font-family: "IBM Plex Sans", sans-serif;
   margin-top: 70px; }
+  .container-paralelogramo h1 {
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin-bottom: 36px;
+    line-height: 42px;
+    max-width: 200px; }
   .container-paralelogramo a {
     text-decoration: none;
     width: 288px; }
@@ -198,14 +207,6 @@ nav, .ul {
         /*mono medium*/
         text-decoration: none;
         padding: 13px 0px; }
-  .container-paralelogramo h1 {
-    font-size: 36px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    text-align: center;
-    font-family: "IBM Plex Sans", sans-serif;
-    margin-bottom: 36px;
-    line-height: 42px; }
 
 .footer {
   margin-top: 91px; }
@@ -229,18 +230,45 @@ nav, .ul {
       line-height: 28px; }
 
 @media screen and (min-width: 1024px) {
+  /*Header*/
   nav {
     display: unset; }
     nav .menu {
-      display: flex; }
+      display: flex;
+      margin-right: 62px; }
       nav .menu li {
         list-style: none;
         padding: 10px;
         margin-right: 28px; }
         nav .menu li a {
-          text-decoration: none; }
+          text-decoration: none;
+          font-family: "IBM Plex Mono", monospace;
+          font-size: 16px;
+          color: #060A24;
+          letter-spacing: 0;
+          line-height: 28px; }
 
   .menu_bar {
-    display: none; } }
+    display: none; }
+
+  .header {
+    height: 80px; }
+    .header .logo {
+      width: 36px;
+      height: 36px; }
+
+  /*Main*/
+  .header-text h1 {
+    margin-left: 200px;
+    font-size: 64px;
+    margin-top: 200px;
+    width: 70%; }
+  .header-text p {
+    margin-left: 200px;
+    font-size: 16px;
+    font-family: "IBM Plex Mono", monospace;
+    line-height: 24px;
+    margin-top: none;
+    max-width: 628px; } }
 
 /*# sourceMappingURL=style.css.map */
