@@ -1,0 +1,27 @@
+.footer{
+    margin-top: 91px;
+
+    p{
+        font-family: $mono;
+        font-size: $font-mobile;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-social{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 16px;
+        margin-bottom: 31px;
+
+        a{
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 28px;
+        }
+    }
+}
