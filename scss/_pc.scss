@@ -1,5 +1,26 @@
-@media screen and (min-width: 1220px){
-    body{
-        background: #000000;
+@media screen and (min-width: 1024px){
+    nav {
+        display: unset;
+
+        .menu{
+            display: flex;
+
+            li{
+                list-style: none;
+                padding: 10px;
+                margin-right: 28px;
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
     }
+
+    .menu_bar{
+        display: none;
+    }
+
+    
+    
 }

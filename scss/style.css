@@ -228,8 +228,19 @@ nav, .ul {
       letter-spacing: 0;
       line-height: 28px; }
 
-@media screen and (min-width: 1220px) {
-  body {
-    background: #000000; } }
+@media screen and (min-width: 1024px) {
+  nav {
+    display: unset; }
+    nav .menu {
+      display: flex; }
+      nav .menu li {
+        list-style: none;
+        padding: 10px;
+        margin-right: 28px; }
+        nav .menu li a {
+          text-decoration: none; }
+
+  .menu_bar {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
