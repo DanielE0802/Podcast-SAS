@@ -30,36 +30,158 @@
         display: none;
     }
 
-    .header{
+    .header {
         height: 80px;
 
-        .logo{
+        .logo {
             width: 36px;
             height: 36px;
+            margin-left: 100px;
         }
     }
 
     /*Main*/
 
-.header-text {
-    h1 {
-        margin-left: $m-pc;
-        font-size: 64px;
-        margin-top: 200px;
-        width: 70%;
+    .header-text {
 
+        h1 {
+            margin-left: $m-pc;
+            font-size: 64px;
+            margin-top: 200px;
+            width: 70%;
+
+        }
+
+        p {
+            margin-left: $m-pc;
+            font-size: $text-pc;
+            font-family: $mono;
+            line-height: 24px;
+            margin-top: none;
+            max-width: 628px;
+
+        }
     }
 
-    p {
+    .fondo-sing {
+        width: 226px;
         margin-left: $m-pc;
-        font-size: $text-pc;
+    }
+
+    .header-sing {
         font-family: $mono;
+        font-size: 18px;
+        text-align: center;
         line-height: 24px;
-        margin-top: none;
-        max-width: 628px;
+
     }
+
+    .hipervinculo {
+        text-decoration: none;
+    }
+
+
+    .container-poligono {
+
+        .poligono {
+            clip-path: polygon(0 16%, 100% 2%, 100% 94%, 0% 100%);
+            min-height: 1042.6px;
+            margin: 0px;
+            padding: 5px;
+
+        }
+
+        .container-title {
+            padding-top: 191px;
+            margin: 0px;
+            font-family: $sans;
+            font-size: $title-pc;
+            margin-left: $m-pc;
+
+        }
+
+    }
+
+    /*Contenido embebido*/
+    .container-iframe {
+        display: flex;
+        margin: 26px 100px 0px 100px;
+    }
+
+    .container-iframe2 {
+        display: flex;
+        margin: 72px 100px 0px 100px;
+    }
+
+    .iframeup {
+        width: 100%;
+        height: 232px;
+        margin-right: 72px;
+    }
+
+    .iframeup2 {
+        width: 100%;
+        height: 232px;
+    }
+
+
+    .container-img {
+        display: flex;
+        margin-left: $m-pc;
+        margin-top: 64px;
+
+        img {
+            width: 457.6px;
+            height: 660px;
+        }
+
+        .container-info {
+            margin: 0px;
+            align-self: center;
+            margin-left: 62.4px;
+
+            h3 {
+                font-family: $sans;
+                font-size: 48px;
+                margin-bottom: 24px;
+            }
+
+            p {
+                max-width: 464px;
+                font-family: $mono;
+                font-size: $text-pc;
+                line-height: 24px;
+                margin: 0px;
+            }
+        }
+    }
+     
+    .galery-img {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            width: 30%;
+            min-width: 300px;
+            flex-grow: 1;
+
+       }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
-}
-
