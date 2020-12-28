@@ -22,6 +22,9 @@
     }
 }
 
+.menu {
+    display: initial;
+}
 
 .fondo-sing {
     background: $bg-sing;
@@ -29,19 +32,24 @@
     margin-left: 16px;
     margin-top: 36px;
     text-decoration: none;
+    transition-property: background-image;
+    transition-duration: 2s;
 }
+
 
 
 .header-sing {
     font-family: $mono;
     font-size: $font-mobile;
+    font-weight: 500;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
     line-height: 22px;
     padding-top: $m-mobile;
     padding-bottom: $m-mobile;
-
+    transition-property: background-image, color ;
+    transition-duration: 1.5s;
 }
 
 .hipervinculo {
@@ -58,6 +66,12 @@
     margin-top: -74px;
     z-index: -1;
 
+}
+
+.container-img {
+    img {
+        margin-top: 48px;
+    }
 }
 
 .container-title {
@@ -204,10 +218,18 @@
                 text-align: center;
                 line-height: 22px;
                 font-family: $mono;
-                /*mono medium*/
-                text-decoration: none;
                 padding: 13px 0px;
             }
         }
+    }
+}
+
+
+/*Hover*/
+.fondo-sing:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+
+    .header-sing {
+        color: #FFFFFF;
     }
 }
