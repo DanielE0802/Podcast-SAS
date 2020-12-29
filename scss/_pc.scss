@@ -75,6 +75,16 @@
             max-width: 628px;
 
         }
+
+        h1::after {
+            content: ".";
+            color: #0000EC;
+            font-family: $sans;
+            font-size: 64px;
+            position: static;
+
+        }
+
     }
 
     .fondo-sing {
@@ -236,7 +246,7 @@
         align-content: center;
         margin-left: 100px;
         margin-right: 100px;
-    
+
 
         p {
             color: #060A24;
@@ -244,14 +254,15 @@
             width: unset;
             text-align: center;
             align-self: center;
-           
+
         }
 
         .footer-social {
             margin-top: unset;
             margin-bottom: unset;
-            width:234px;
+            width: 234px;
             align-self: center;
+
             a {
                 font-size: 18px;
             }

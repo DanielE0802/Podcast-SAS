@@ -11,6 +11,10 @@
 
     }
 
+    span{
+        text-decoration-line: line-through ;
+    }
+
     p {
         margin-left: $m-mobile;
         font-size: $font-mobile;
@@ -20,6 +24,18 @@
         line-height: 22px;
         margin-top: $m-mobile;
     }
+
+    h1::after {
+        content: ".";
+        font-family: $sans;
+        position: static;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+
+    }
+
 }
 
 .menu {
@@ -48,7 +64,7 @@
     line-height: 22px;
     padding-top: $m-mobile;
     padding-bottom: $m-mobile;
-    transition-property: background-image, color ;
+    transition-property: background-image, color;
     transition-duration: 1.5s;
 }
 
@@ -132,10 +148,11 @@
 .galery-img {
     display: flex;
     flex-wrap: wrap;
+    
 
     img {
-        flex-basis: 400px;
-
+        width: 290px;
+        flex-grow: 1;
     }
 
 }
@@ -210,6 +227,9 @@
 
         div {
             background: #00F3BB;
+            transition-property: background-image, color;
+            transition-duration: 2s;
+
 
             p {
                 font-size: 16px;
@@ -219,6 +239,8 @@
                 line-height: 22px;
                 font-family: $mono;
                 padding: 13px 0px;
+                transition-property: background-image, color;
+                transition-duration: 2s;
             }
         }
     }
@@ -226,10 +248,18 @@
 
 
 /*Hover*/
-.fondo-sing:hover{
+.fondo-sing:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 
     .header-sing {
+        color: #FFFFFF;
+    }
+}
+
+.boton:hover .container-episodios {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+
+    p {
         color: #FFFFFF;
     }
 }

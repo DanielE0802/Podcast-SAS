@@ -1,0 +1,57 @@
+@media screen and (min-width: 750px) and (max-width:1024px) {
+
+    .logo {
+        width: 28px;
+        height: 28px;
+        margin-left: 50px;
+    }
+
+    /*Main*/
+
+    .header-text {
+
+        h1 {
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+
+        p {
+            margin-left: 50px;
+
+        }
+    }
+
+    .fondo-sing {
+        width: 226px;
+        margin-left: 50px;
+    }
+
+
+    .container-title {
+        margin-left: 50px;
+
+    }
+     /*Contenido embebido*/
+
+    .container-iframe {
+        display: flex;
+        margin: 26px 100px 0px 100px;
+    }
+
+    .container-iframe2 {
+        display: flex;
+        margin: 72px 100px 0px 100px;
+    }
+
+    .iframeup {
+        width: 100%;
+        height: 232px;
+        margin-right: 72px;
+    }
+
+    .iframeup2 {
+        width: 100%;
+        height: 232px;
+    }
+
+}
