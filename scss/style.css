@@ -523,11 +523,11 @@
   /*Contenido embebido*/
   .container-iframe {
     display: flex;
-    margin: 26px 100px 0px 100px; }
+    margin: 20px 70px 0px 70px; }
 
   .container-iframe2 {
     display: flex;
-    margin: 72px 100px 0px 100px; }
+    margin: 72px 70px 0px 70px; }
 
   .iframeup {
     width: 100%;
