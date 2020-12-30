@@ -95,6 +95,9 @@
   .menu li {
     padding-bottom: 24px; }
 
+html {
+  scroll-behavior: smooth; }
+
 .header-text h1 {
   margin-left: 16px;
   font-size: 36px;
@@ -314,6 +317,9 @@
 
 @media screen and (min-width: 1024px) {
   /*Header*/
+  html {
+    scroll-behavior: smooth !important; }
+
   .header {
     height: 80px; }
     .header .logo {

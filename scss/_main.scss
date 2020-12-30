@@ -1,3 +1,8 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
 .header-text {
     h1 {
         margin-left: $m-mobile;
@@ -48,7 +53,7 @@
     margin-left: 16px;
     margin-top: 36px;
     text-decoration: none;
-    transition-property: background-image;
+    transition-property: background-image ;
     transition-duration: 2s;
 }
 
@@ -250,7 +255,6 @@
 /*Hover*/
 .fondo-sing:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-
     .header-sing {
         color: #FFFFFF;
     }

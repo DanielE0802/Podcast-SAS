@@ -2,7 +2,10 @@
 
     /*Header*/
 
-
+    html{
+        scroll-behavior: smooth !important;
+      }
+      
     .header {
         height: 80px;
 
@@ -176,6 +179,7 @@
                 font-size: $text-pc;
                 line-height: 24px;
                 margin: 0px;
+                
             }
         }
     }
