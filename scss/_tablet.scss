@@ -1,4 +1,8 @@
 @media screen and (min-width: 750px) and (max-width:1024px) {
+    
+html{
+    scroll-behavior: smooth;
+}
 
     .logo {
         width: 28px;
@@ -12,7 +16,7 @@
             }
     }
 
-    /*Main*/
+    /*Titulo y texto del inicio-*/
 
     .header-text {
 
@@ -28,11 +32,13 @@
         }
     }
 
+
+    /*Boton "Conoce más"-*/
+
     .fondo-sing {
         width: 226px;
         margin-left: 50px;
     }
-
 
     .container-title {
         margin-left: 50px;
@@ -40,6 +46,7 @@
     }
 
 
+    /*Fondo "Episodios"*/
 
     .container-poligono {
 
@@ -69,11 +76,12 @@
         margin-right: 72px;
     }
 
-    .iframeup2 {
+    .iframe{
         width: 100%;
         height: 232px;
             }
 
+            
 
     .container-img {
 

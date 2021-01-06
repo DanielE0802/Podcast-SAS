@@ -1,7 +1,8 @@
-
-html{
+html {
     scroll-behavior: smooth;
 }
+
+/*Titulo y texto del inicio-*/
 
 .header-text {
     h1 {
@@ -16,8 +17,8 @@ html{
 
     }
 
-    span{
-        text-decoration-line: line-through ;
+    span {
+        text-decoration-line: line-through;
     }
 
     p {
@@ -43,9 +44,9 @@ html{
 
 }
 
-.menu {
-    display: initial;
-}
+
+
+/*Boton "Conoce más"-*/
 
 .fondo-sing {
     background: $bg-sing;
@@ -53,30 +54,32 @@ html{
     margin-left: 16px;
     margin-top: 36px;
     text-decoration: none;
-    transition-property: background-image ;
+    transition-property: background-image;
     transition-duration: 2s;
+
+    .hipervinculo {
+        text-decoration: none;
+
+        .header-sing {
+            font-family: $mono;
+            font-size: $font-mobile;
+            font-weight: 600;
+            color: #060A24;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 22px;
+            padding-top: $m-mobile;
+            padding-bottom: $m-mobile;
+            transition-property: background-image, color;
+            transition-duration: 1.5s;
+        
+        
+        }    
+    }   
 }
 
 
-
-.header-sing {
-    font-family: $mono;
-    font-size: $font-mobile;
-    font-weight: 500;
-    color: #060A24;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 22px;
-    padding-top: $m-mobile;
-    padding-bottom: $m-mobile;
-    transition-property: background-image, color;
-    transition-duration: 1.5s;
-}
-
-.hipervinculo {
-    text-decoration: none;
-}
-
+/*Fondo "Episodios"*/
 
 .poligono {
     position: absolute;
@@ -89,11 +92,8 @@ html{
 
 }
 
-.container-img {
-    img {
-        margin-top: 48px;
-    }
-}
+
+/*Titutlo "episodios*/
 
 .container-title {
     z-index: 10;
@@ -106,16 +106,44 @@ html{
 
 }
 
+
+/*Contenido embebido de la sección "episodios"*/
+
 .container-iframe {
     margin-left: 3.4%;
     margin-right: 3.4%;
     padding-top: 21px;
+
 }
 
 .container-iframe2 {
     margin-left: 3.4%;
     margin-right: 3.4%;
 }
+
+
+/*Sección "Nosotros" texto e imagen del celular*/
+
+.container-img {
+    margin-top: 48px;
+
+    img {
+        width: 360px;
+        height: 519px;
+    }
+
+    .container-info {
+        margin-top: 27px;
+        font-family: $mono;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+}
+
+
+/*Sección "Nosotros" texto e imagen del celular*/
 
 .container-info {
     margin-left: $m-mobile;
@@ -140,6 +168,8 @@ html{
 }
 
 
+/*Sección "Invitados" titulo y la geleria de imagenes*/
+
 .invitados {
     margin-top: 54px;
     font-family: $sans;
@@ -153,7 +183,7 @@ html{
 .galery-img {
     display: flex;
     flex-wrap: wrap;
-    
+
 
     img {
         width: 290px;
@@ -161,6 +191,9 @@ html{
     }
 
 }
+
+
+/*Sección "Temas" titulo, texto e iconos*/
 
 .temas {
     font-family: $sans;
@@ -193,10 +226,11 @@ html{
             margin-bottom: 36px;
 
         }
-
     }
-
 }
+
+
+/*Fondo sección "Ultimas novedades"*/
 
 .paralelogramo {
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
@@ -207,6 +241,9 @@ html{
     z-index: -1;
     margin-top: 6px;
 }
+
+
+/*Sección "Ultimas novedades" Boton y texto*/
 
 .container-paralelogramo {
     display: flex;
@@ -255,6 +292,7 @@ html{
 /*Hover*/
 .fondo-sing:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+
     .header-sing {
         color: #FFFFFF;
     }

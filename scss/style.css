@@ -8,14 +8,9 @@
 
 /*Fuentes*/
 /* Fuentes */
-/*no tengo claro como seleccinoar el estilo semi-bolda*/
-/*no tengo claro como seleccinoar el estilo medium*/
 /*Colores*/
 /*margenes*/
 /*tamaños fuentes*/
-.ul {
-  display: none; }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -25,8 +20,6 @@
   width: 100%;
   top: 0px;
   background: #FFF;
-  /*Preguntar si se puede utilizar
-  box-shadow: 1px 1px 2px 2px rgba($color: #212121, $alpha: .19);*/
   z-index: 100; }
 
 .logo {
@@ -98,6 +91,7 @@
 html {
   scroll-behavior: smooth; }
 
+/*Titulo y texto del inicio-*/
 .header-text h1 {
   margin-left: 16px;
   font-size: 36px;
@@ -126,9 +120,7 @@ html {
   letter-spacing: 0;
   line-height: 42px; }
 
-.menu {
-  display: initial; }
-
+/*Boton "Conoce más"-*/
 .fondo-sing {
   background: #00F3BB;
   width: 288px;
@@ -137,23 +129,22 @@ html {
   text-decoration: none;
   transition-property: background-image;
   transition-duration: 2s; }
+  .fondo-sing .hipervinculo {
+    text-decoration: none; }
+    .fondo-sing .hipervinculo .header-sing {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 14px;
+      font-weight: 600;
+      color: #060A24;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 22px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      transition-property: background-image, color;
+      transition-duration: 1.5s; }
 
-.header-sing {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
-  font-weight: 500;
-  color: #060A24;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 22px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  transition-property: background-image, color;
-  transition-duration: 1.5s; }
-
-.hipervinculo {
-  text-decoration: none; }
-
+/*Fondo "Episodios"*/
 .poligono {
   position: absolute;
   width: 100%;
@@ -163,9 +154,7 @@ html {
   margin-top: -74px;
   z-index: -1; }
 
-.container-img img {
-  margin-top: 48px; }
-
+/*Titutlo "episodios*/
 .container-title {
   z-index: 10;
   margin-top: 88px;
@@ -175,6 +164,7 @@ html {
   font-family: "IBM Plex Sans", sans-serif;
   margin-left: 16px; }
 
+/*Contenido embebido de la sección "episodios"*/
 .container-iframe {
   margin-left: 3.4%;
   margin-right: 3.4%;
@@ -184,6 +174,21 @@ html {
   margin-left: 3.4%;
   margin-right: 3.4%; }
 
+/*Sección "Nosotros" texto e imagen del celular*/
+.container-img {
+  margin-top: 48px; }
+  .container-img img {
+    width: 360px;
+    height: 519px; }
+  .container-img .container-info {
+    margin-top: 27px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px; }
+
+/*Sección "Nosotros" texto e imagen del celular*/
 .container-info {
   margin-left: 16px;
   margin-right: 16px; }
@@ -200,6 +205,7 @@ html {
     letter-spacing: 0;
     line-height: 22px; }
 
+/*Sección "Invitados" titulo y la geleria de imagenes*/
 .invitados {
   margin-top: 54px;
   font-family: "IBM Plex Sans", sans-serif;
@@ -216,6 +222,7 @@ html {
     width: 290px;
     flex-grow: 1; }
 
+/*Sección "Temas" titulo, texto e iconos*/
 .temas {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
@@ -241,6 +248,7 @@ html {
     margin-top: 13px;
     margin-bottom: 36px; }
 
+/*Fondo sección "Ultimas novedades"*/
 .paralelogramo {
   clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
   width: 100%;
@@ -250,6 +258,7 @@ html {
   z-index: -1;
   margin-top: 6px; }
 
+/*Sección "Ultimas novedades" Boton y texto*/
 .container-paralelogramo {
   display: flex;
   flex-direction: column;
@@ -315,7 +324,73 @@ html {
       letter-spacing: 0;
       line-height: 28px; }
 
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  html {
+    scroll-behavior: smooth; }
+
+  .logo {
+    width: 28px;
+    height: 28px;
+    margin-left: 50px; }
+
+  .menu_bar span {
+    margin-right: 40px; }
+
+  /*Titulo y texto del inicio-*/
+  .header-text h1 {
+    margin-left: 50px;
+    margin-top: 100px; }
+  .header-text p {
+    margin-left: 50px;
+    max-width: 85%; }
+
+  /*Boton "Conoce más"-*/
+  .fondo-sing {
+    width: 226px;
+    margin-left: 50px; }
+
+  .container-title {
+    margin-left: 50px; }
+
+  /*Fondo "Episodios"*/
+  .container-poligono .poligono {
+    clip-path: polygon(0 7%, 100% 2%, 100% 94%, 0% 100%);
+    min-height: 842.6px; }
+
+  /*Contenido embebido*/
+  .container-iframe {
+    display: flex;
+    margin: 20px 60px 0px 60px; }
+
+  .container-iframe2 {
+    display: flex;
+    margin: 52px 60px 0px 60px; }
+
+  .iframeup {
+    width: 100%;
+    height: 232px;
+    margin-right: 72px; }
+
+  .iframe {
+    width: 100%;
+    height: 232px; }
+
+  .container-img {
+    margin-left: 50px;
+    margin-right: 50px; }
+    .container-img img {
+      margin-left: 21vw;
+      width: 400px; }
+
+  .invitados {
+    margin-left: 50px; }
+
+  .temas {
+    margin-left: 50px; } }
 @media screen and (min-width: 1024px) {
+  html {
+    scroll-behavior: smooth; }
+
   /*Header*/
   html {
     scroll-behavior: smooth !important; }
@@ -364,7 +439,6 @@ html {
     font-size: 16px;
     font-family: "IBM Plex Mono", monospace;
     line-height: 24px;
-    margin-top: none;
     max-width: 628px; }
   .header-text h1::after {
     content: ".";
@@ -376,15 +450,14 @@ html {
   .fondo-sing {
     width: 226px;
     margin-left: 200px; }
-
-  .header-sing {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 18px;
-    text-align: center;
-    line-height: 24px; }
-
-  .hipervinculo {
-    text-decoration: none; }
+    .fondo-sing .hipervinculo {
+      text-decoration: none; }
+      .fondo-sing .hipervinculo .header-sing {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 24px; }
 
   .container-poligono .poligono {
     clip-path: polygon(0 16%, 100% 2%, 100% 94%, 0% 100%);
@@ -412,7 +485,7 @@ html {
     height: 232px;
     margin-right: 72px; }
 
-  .iframeup2 {
+  .iframe {
     width: 100%;
     height: 232px; }
 
@@ -449,7 +522,7 @@ html {
 
   .invitados {
     margin-left: 200px;
-    margin-bottom: 56px;
+    margin-bottom: 36px;
     margin-top: 64px; }
 
   .temas {
@@ -506,63 +579,5 @@ html {
     letter-spacing: 0;
     line-height: 28px;
     text-decoration-line: line-through; } }
-@media screen and (min-width: 750px) and (max-width: 1024px) {
-  .logo {
-    width: 28px;
-    height: 28px;
-    margin-left: 50px; }
-
-  .menu_bar span {
-    margin-right: 40px; }
-
-  /*Main*/
-  .header-text h1 {
-    margin-left: 50px;
-    margin-top: 100px; }
-  .header-text p {
-    margin-left: 50px;
-    max-width: 85%; }
-
-  .fondo-sing {
-    width: 226px;
-    margin-left: 50px; }
-
-  .container-title {
-    margin-left: 50px; }
-
-  .container-poligono .poligono {
-    clip-path: polygon(0 7%, 100% 2%, 100% 94%, 0% 100%);
-    min-height: 842.6px; }
-
-  /*Contenido embebido*/
-  .container-iframe {
-    display: flex;
-    margin: 20px 60px 0px 60px; }
-
-  .container-iframe2 {
-    display: flex;
-    margin: 52px 60px 0px 60px; }
-
-  .iframeup {
-    width: 100%;
-    height: 232px;
-    margin-right: 72px; }
-
-  .iframeup2 {
-    width: 100%;
-    height: 232px; }
-
-  .container-img {
-    margin-left: 50px;
-    margin-right: 50px; }
-    .container-img img {
-      margin-left: 21vw;
-      width: 400px; }
-
-  .invitados {
-    margin-left: 50px; }
-
-  .temas {
-    margin-left: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

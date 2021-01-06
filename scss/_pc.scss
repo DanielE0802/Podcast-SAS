@@ -1,5 +1,9 @@
 @media screen and (min-width: 1024px) {
 
+html{
+    scroll-behavior: smooth;
+}
+
     /*Header*/
 
     html{
@@ -13,7 +17,9 @@
             width: 36px;
             height: 36px;
             margin-left: 100px;
+
         }
+        
     }
 
 
@@ -74,7 +80,6 @@
             font-size: $text-pc;
             font-family: $mono;
             line-height: 24px;
-            margin-top: none;
             max-width: 628px;
 
         }
@@ -93,19 +98,26 @@
     .fondo-sing {
         width: 226px;
         margin-left: $m-pc;
+
+        .hipervinculo {
+            text-decoration: none;
+            
+            .header-sing{
+                font-family: $mono;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                line-height: 24px;
+        
+            }
+        }
+
+       
     }
 
-    .header-sing {
-        font-family: $mono;
-        font-size: 18px;
-        text-align: center;
-        line-height: 24px;
+   
 
-    }
-
-    .hipervinculo {
-        text-decoration: none;
-    }
+    
 
 
     .container-poligono {
@@ -146,7 +158,7 @@
         margin-right: 72px;
     }
 
-    .iframeup2 {
+    .iframe {
         width: 100%;
         height: 232px;
     }
@@ -202,7 +214,7 @@
 
     .invitados {
         margin-left: $m-pc;
-        margin-bottom: 56px;
+        margin-bottom: 36px;
         margin-top: 64px;
     }
 

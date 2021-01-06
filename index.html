@@ -9,13 +9,11 @@
     <meta name="Keywords" content="Podcast, Html, Css">
     <title>Podcast</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap"
-        rel="stylesheet">
-
+    <!--Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
 
+    <!--Estilos, normaliza y logo-->
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="icon" href="img/logo.svg">
@@ -23,23 +21,30 @@
 
 <body>
     <header class="header">
-        <img src="Img/logo.svg" class="logo">
+
+        <!--Icono podcast-->
+        <a href="#" title="">
+            <img src="Img/logo.svg" class="logo" alt="Logo Podcast">
+        </a>
+
+        <!--Nav-->
         <nav class="menu_bar">
             <input type="checkbox" class="input" id="input">
             <span></span>
             <span></span>
             <span></span>
             <ul class="menu">
-                <li><a href="#episodios" id="headerr nav__episodios">EPISODIOS</a></li>
-                <li><a href="#nosotros" id="headerr nav__nosotros">NOSOTROS</a></li>
-                <li><a href="#invitados" id="headerr nav__entrevistas">ENTREVISTAS</a></li>
-                <li><a href="#topicos" id="headerr nav__topicos">TÓPICOS</a></li>
+                <li><a href="#episodios">EPISODIOS</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#invitados">ENTREVISTAS</a></li>
+                <li><a href="#topicos">TÓPICOS</a></li>
             </ul>
 
         </nav>
 
     </header>
     <main>
+        <!--Titulo y texto del inicio-->
         <div class="header-text">
             <h1 class="header-text__title">Hello <span> world </span> pale blue dot</h1>
             <p class="header-text__text">El portal de podcasts que explora el mundo de la programación y la tecnología.
@@ -48,15 +53,17 @@
         <div>
 
         </div>
+
+        <!--Boton "Conoce más"-->
         <div class="fondo-sing">
             <a href="#nosotros" title="CONOCÉ MÁS" class="hipervinculo">
                 <h4 class="header-sing">CONOCÉ MÁS</h4>
             </a>
 
         </div>
-        </a>
 
 
+        <!--Fondo "Episodios"-->
         <div class="container-poligono">
             <div class="poligono">
             </div>
@@ -64,50 +71,61 @@
 
         </div>
 
+        <!--Contenido embebido-->
         <div class="container-iframe">
             <div class="iframeup">
                 <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" width="100%"
-                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" class="uno"></iframe>
+                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" class="uno">
+                </iframe>
             </div>
-            <div class="iframeup2">
+            <div class="iframe">
                 <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%"
-                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" class="dos"></iframe>
+                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" class="dos">
+                </iframe>
             </div>
         </div>
         <div class="container-iframe2">
             <div class="iframeup">
                 <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%"
-                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">
+                </iframe>
             </div>
-            <div class="iframeup2">
+            <div class="iframe">
                 <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%"
-                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">
+                </iframe>
 
             </div>
         </div>
+
+        <!--Sección "Nosotros" texto e imagen del celular-->
         <div class="container-img" id="nosotros">
             <img src="Img/phone.png" alt="">
 
-            <div class="container-info" >
-                <h3 >De dónde venimos</h3>
+            <div class="container-info">
+                <h3>De dónde venimos</h3>
                 <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position
-                    in
-                    the Universe, are challenged by this point of pale light. <br> <br>
+                    in the Universe, are challenged by this point of pale light. <br> <br>
                     Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
                     vastness, there is no hint that help will come from elsewhere to save us from ourselves.
                 </p>
             </div>
         </div>
+
+        <!--Sección "Invitados" titulo y la geleria de imagenes-->
         <h4 class="invitados" id="invitados">Invitadas/os estelares</h4>
         <div class="galery-img">
-            <img src="Img/grace-hopper.png" alt="">
-            <img src="Img/Katie-Bouman.png" alt="">
-            <img src="Img/Margaret_Hamilton.png" alt="">
-            <img src="Img/An E.R.A.Univac 1103 computer in the 1950s.png" alt="">
-            <img src="Img/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
-                alt="">
-            <img src="Img/susan-kare.png" alt="">
-        </div >
+            <img src="Img/grace-hopper.png" alt="Grace hopper">
+            <img src="Img/Katie-Bouman.png" alt="Katie Bouman">
+            <img src="Img/Margaret_Hamilton.png" alt="Margaret Hamilton">
+            <img src="Img/An_E.R.A.Univac_1103_computer_in_the_1950s.png"
+                alt="An E.R.A Univac 1103 computer in the 1950s">
+            <img src="Img/Computer_operators_with_an_Eniac—the_world’s_first_programmable_general-purpose_computer.png"
+                alt="Computer operators with an Eniac - The world’s first programmable general purpose computer">
+            <img src="Img/susan-kare.png" alt="Susan-Kare">
+        </div>
+
+        <!--Sección "Temas" titulo, texto e iconos-->
         <h4 class="temas" id="topicos">Algunos de nuestros temas</h4>
         <div class="iconos">
             <div class="iconos-container">
@@ -127,8 +145,12 @@
                 <p>Seguridad informática</p>
             </div>
         </div>
+
+        <!--Fondo sección "Ultimas novedades"-->
         <div class="paralelogramo">
         </div>
+
+        <!--Sección "Ultimas novedades" Boton y texto -->
         <div class="container-paralelogramo">
             <h1>¿Querés las últimas novedades?</h1>
             <a href="#episodios" class="boton">
@@ -139,6 +161,7 @@
         </div>
     </main>
 
+    <!--Footer con copyright e iconos de las redes sociales.-->
     <footer class="footer">
         <p>© 2019— Hello blue pale dot </p>
         <div class="footer-social">
