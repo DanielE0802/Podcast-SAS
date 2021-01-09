@@ -586,6 +586,9 @@ html {
     color: #00F3BB;
     letter-spacing: 0;
     line-height: 28px;
+    text-decoration-line: line-through; }
+
+  .menu li a:active {
     text-decoration-line: line-through; } }
 
 /*# sourceMappingURL=style.css.map */

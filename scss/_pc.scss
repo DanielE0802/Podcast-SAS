@@ -299,7 +299,7 @@
         }
     }
 
-    
+
     /*Hover*/
 
     .menu li a:hover {
@@ -310,6 +310,11 @@
         line-height: 28px;
         text-decoration-line: line-through;
 
+    }
+
+    .menu li a:active{
+        text-decoration-line: line-through;
+       
     }
 
 
