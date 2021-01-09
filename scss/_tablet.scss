@@ -1,8 +1,10 @@
 @media screen and (min-width: 750px) and (max-width:1024px) {
-    
-html{
-    scroll-behavior: smooth;
-}
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /*Nav*/
 
     .logo {
         width: 28px;
@@ -10,11 +12,12 @@ html{
         margin-left: 50px;
     }
 
-    .menu_bar{
+    .menu_bar {
         span {
             margin-right: 40px;
-            }
+        }
     }
+
 
     /*Titulo y texto del inicio-*/
 
@@ -58,6 +61,7 @@ html{
         }
     }
 
+
     /*Contenido embebido*/
 
     .container-iframe {
@@ -76,12 +80,13 @@ html{
         margin-right: 72px;
     }
 
-    .iframe{
+    .iframe {
         width: 100%;
         height: 232px;
-            }
+    }
 
-            
+
+    /*Sección "Nosotros"*/
 
     .container-img {
 
@@ -89,17 +94,20 @@ html{
         margin-right: 50px;
 
         img {
-           margin-left: 21vw;
-           width:400px;
+            margin-left: 21vw;
+            width: 400px;
         }
 
     }
+    
 
-    .invitados{
+    /*Sección "Inivitados y temas"*/
+
+    .invitados {
         margin-left: 50px;
     }
 
-    .temas{
+    .temas {
         margin-left: 50px;
     }
 }
