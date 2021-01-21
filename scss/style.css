@@ -165,6 +165,13 @@ html {
   margin-left: 16px; }
 
 /*Contenido embebido de la sección "episodios"*/
+iframe {
+  width: 100%;
+  height: 232px;
+  border: 0px;
+  background-color: transparent;
+  opacity: 1; }
+
 .container-iframe {
   margin-left: 3.4%;
   margin-right: 3.4%;
